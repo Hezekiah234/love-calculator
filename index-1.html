@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>LOVE CALCULATOR</title>
+    <link rel="stylesheet" href="bootstrap.css">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body style="background-image: url(image/pexels-george-dolgikh-2072185.jpg);background-size: cover " >
+    <div class="allSection container col-lg-9 col-12 shadow-sm">
+        <h1 class="text-center pt-3">Love Calculator</h1>
+        <marquee behavior="" direction="">
+            <p style="color: black;">Check whether you're compatable with your partner here.</p>
+        </marquee>
+
+        <div id="errMsg" class="text-light"><I>Please enter Player name & Lover name!</I></div>
+        <div id="errOne" >Please enter Player's name</div>
+        <div id="errTwo">Please enter lover's name</div>
+        <div class="inputArea">
+            <div class="w-50 me-4">
+                <h3>❣Player name❤</h3>
+                <input type="text" id="playerName">
+            </div>
+            <div class="w-50">
+                <h3>💑Lover name💘</h3>
+                <input type="text" id="loverName">
+            </div>
+        </div>
+        <button onclick="check()">Check</button>
+        <div id="resultSection">
+            <p id="compat"></p>
+            <p id="chance"></p>
+            <h5 id="advice"></h5>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+    <script src="bootstrap.js"></script>
+</body>
+</html>
